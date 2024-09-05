@@ -4,8 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<RootNamespace>WarframeInventory.Application</RootNamespace>
-	<AssemblyName>WarframeInventory.Application</AssemblyName>
+	<RootNamespace>WarframeInventory.Common.Domain</RootNamespace>
+	<AssemblyName>WarframeInventory.Common.Domain</AssemblyName>
 	<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
 

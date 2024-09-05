@@ -4,8 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<RootNamespace>WarframeInventory.Web</RootNamespace>
-	<AssemblyName>WarframeInventory.Web</AssemblyName>
+	<RootNamespace>WarframeInventory.Blazor.Web</RootNamespace>
+	<AssemblyName>WarframeInventory.Blazor.Web</AssemblyName>
 	<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
 
