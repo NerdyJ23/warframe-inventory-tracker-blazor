@@ -49,10 +49,14 @@ internal sealed class WarframeCachedDataHandler
 
 	public async Task UpdateCachedData(ApiUrlHistory endpoint, CancellationToken cancellationToken = default)
 	{
+		await using var context = await _factory.CreateRepositoryAsync(cancellationToken);
+
 		if (endpoint.Name == "Warframes")
 		{
 			_logger.LogTrace("Updating Warframes");
 			await _warframeWriter.UpsertWarframes(await _api.FetchWarframeData(endpoint, cancellationToken), cancellationToken);
+			await context.AddAsync(endpoint, cancellationToken);
+			await context.SaveChangesAsync(cancellationToken);
 			return;
 		}
 	}
