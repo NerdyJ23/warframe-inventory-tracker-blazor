@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -7,6 +7,17 @@
 	<RootNamespace>WarframeInventory.Common.Infrastructure</RootNamespace>
 	<AssemblyName>WarframeInventory.Common.Infrastructure</AssemblyName>
 	<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+	<NoWarn>IDE0290</NoWarn>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.Specification.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+  	<ProjectReference Include="../Abstractions/Abstractions.csproj" />
+  </ItemGroup>
 
 </Project>

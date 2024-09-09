@@ -8,13 +8,21 @@
 	<AssemblyName>WarframeInventory.WorkerService.Application</AssemblyName>
 	<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
     <UserSecretsId>dotnet-Application-81658658-3196-4db4-8ff7-5d6584c162f8</UserSecretsId>
+	<NoWarn>IDE0290</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EasyCompressor.LZMA" Version="2.0.2" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-  	<ProjectReference Include="../../Common/Abstractions/Abstractions.csproj"/>
+  	<ProjectReference Include="../../Common/Abstractions/Abstractions.csproj" />
+	<ProjectReference Include="../../Common/Domain/Domain.csproj" />
+	<ProjectReference Include="../../Common/Infrastructure/Infrastructure.csproj" />
   </ItemGroup>
 </Project>
